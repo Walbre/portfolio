@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Les icons bootstrap ne peuvent pas être en local comme il utilisent des ressources en ligne -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+    <link href="../js_css/style.css" rel="stylesheet">
+
+    <script src="../js_css/script.js"></script>
+
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- Début de la navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <!-- Bouton de la navabr en mode réduit -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Contenu de la navbar -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./competences.html">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./interets.html">Intérêts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./projetprofessionnel.html">projet professionnel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./liensutiles.html">liens utiles</a>
+                    </li>
+                    <!-- Dropdown pour choisir la langue -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Français</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown09">
+                            <li><a class="dropdown-item" onclick="toggle('en')" href="#">English</a></li>
+                            <li><a class="dropdown-item" onclick="toggle('br')" href="#">Brezhoneg</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Fin de la navbar -->
+
+    <!-- Haut de la page -->
+    <section class="px-4 py-5 text-center background_image">
+        <h1 class="display-5 fw-bold">Brewal Guyon</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Etudiant en première année de réseaux et télécoms à Lannion</p>
+        </div>
+    </section>
+
+    <br><br><br>
+
+    <!-- Eléments de la timeline -->
+    <div class="container">
+        <div class="row-flex col-12">
+            <div class="col-md-4 squareCv bg-black">
+                <h2><a href="https://iut-lannion.univ-rennes.fr/" class="no_deco_link" target="_blank">IUT de Lannion (22)</a></h2>
+                <h3>2022-2023</h3>
+                <p>1e année de BUT (ex DUT) Réseaux et Télécoms</p>
+            </div>
+        </div>
+        <br>
+        <!-- Utilisation de d-flex pour pouvoir faire une colonne a droite -->
+        <div class="d-flex flex-row-reverse col-md-12">
+            <div class="col-md-4 squareCv bg-black">
+                <h2><a href="https://lycee-la-perouse-kerichen-brest.ac-rennes.fr/" class="no_deco_link" target="_blank">Lycée La Pérouse Kerichen - Brest(29)</a></h2>
+                <h3>2019-2022</h3>
+                <p><strong>BAC GÉNÉRAL MENTION TRÈS BIEN</strong></p>
+                <ul>
+                    <li>spécialité mathématiques/NSI (Numérique et Sciences Informatiques)</li>
+                    <li>options mathématiques expertes, section européenne SVT</li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <div class="flex-row col-12">
+            <div class="col-md-4 squareCv bg-black">
+                <h2><a href="https://skolajdiwanpennarbed.puzl.com/" class="no_deco_link" target="_blank">Collège Diwan Guisseny (29)</a></h2>
+                <h3>2015-2019</h3>
+                <p><strong>BREVET MENTION BIEN</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Début de la progress bar -->
+    <div class="container" id="myBarContainer">
+        <div class="progress progress-bar-vertical">
+            <div class="progress-bar" id="myBar" role="progressbar" style="width: 0%;"></div>
+        </div>
+    </div>
+    
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <!-- Bouton pour ouvrir le CV -->
+    <div class="text-center">
+        <div class="col-lg-6 mx-auto">
+            <a href="../assets/GuyonBrewalCV.pdf" target="_blank" class="btn btn-primary btn-lg px-4 gap-3">Ouvrir le CV</a>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <!-- Début footer -->
+    <footer class="white_txt">
+        <i class="bi bi-c-circle"></i> Copyright Brewal Guyon
+        <br>
+        <a href="https://pixabay.com/fr/users/stocksnap-894430/?utm_source=link-attribution" target="_blank">Source pour l'image</a>
+    </footer>
+    <!-- Fin footer -->
+
+    
+    <!-- Insertion du script de bootstrap à la fin -->
+    <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
