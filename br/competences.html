@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+    <link href="../js_css/style.css" rel="stylesheet">
+
+    <script src="../js_css/script.js"></script>
+    
+    <title>Portfolio</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Degemer</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Barregezhioù</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./interets.html">Interest</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./projetprofessionnel.html">projed micherel</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./liensutiles.html">liammoù</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown09" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Brezhoneg</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown09">
+                        <li><a class="dropdown-item" onclick="toggle('en')" href="#">English</a></li>
+                        <li><a class="dropdown-item" onclick="toggle('fr')" href="#">Français</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br><br>
+
+    <div class="container">
+        <h1 class="white_txt">Barregezhioù</h1>
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="onglet1" data-bs-toggle="list" href="#o1" role="tab"><strong>Rouedadoù stlennegel</strong></a>
+                    <a class="list-group-item list-group-item-action" id="onglet2" data-bs-toggle="list" href="#o2" role="tab"><strong>Surentez</strong></a>
+                    <a class="list-group-item list-group-item-action" id="onglet3" data-bs-toggle="list" href="#o3" role="tab"><strong>Programiñ</strong></a>
+                    <a class="list-group-item list-group-item-action" id="onglet4" data-bs-toggle="list" href="#o4" role="tab"><strong>Diazoù roadennoù</strong></a>
+                    <a class="list-group-item list-group-item-action" id="onglet5" data-bs-toggle="list" href="#o5" role="tab"><strong>Yezhoù</strong></a>
+                    <a class="list-group-item list-group-item-action" id="onglet6" data-bs-toggle="list" href="#o6" role="tab"><strong>Reizhiadoù korvoiñ</strong></a>
+                </div>
+            </div>
+            
+            <div class="col-md-8 col-12">
+                <br class="void_spaces"><br class="void_spaces">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade active show" id="o1" role="tabpanel" aria-labelledby="onglet1">
+                        <ul>
+                            <li class="white_txt">Krouiñ, suraat, disac'hañ ur roudead stlennegel</li>
+                            <li class="white_txt">IPv4/IPv6, Wifi, Active Directory, http(s), SMTP</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="o2" role="tabpanel" aria-labelledby="onglet2">
+                        <ul>
+                            <li class="white_txt">Suraat ar rouedadoù hag an arloadoù web</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="o3" role="tabpanel" aria-labelledby="onglet3">
+                        <ul>
+                            <li class="white_txt">Implij yezh Python ha Bash</li>
+                            <li class="white_txt">Diazezoù er yezhoù JavaScript, PHP hag C</li>
+                            <li class="white_txt">Implij an ostilh Git</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="o4" role="tabpanel" aria-labelledby="onglet4">
+                        <ul>
+                            <li class="white_txt">Implij yezh SQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="o5" role="tabpanel" aria-labelledby="onglet5">
+                        <ul>
+                            <li class="white_txt">Saozneg, live mat, Cambridge B1</li>
+                            <li class="white_txt">Brezhoneg, live mat tre, Dibab C1</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="o6" role="tabpanel" aria-labelledby="onglet6">
+                        <ul>
+                            <li class="white_txt">Linux ha Windows</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br><br>
+
+    <footer class="white_txt">
+        <i class="bi bi-c-circle"></i> Copyright Brewal Guyon
+    </footer>
+    
+    <script src="../bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>

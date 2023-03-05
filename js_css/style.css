@@ -1,0 +1,196 @@
+/*
+Classe utilisée pour afficher l'image statique en arrière plan du index.html
+*/
+.background_image{
+    background-image: url("../assets/images/image_index.png");
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*
+Couleur de police blanche pour les sections
+*/
+body section{
+    color: white;
+}
+
+/*
+Fond noir pour les body
+*/
+body{
+    background-color: black;
+}
+
+/*
+Création de la progress bar verticale, utilisation de la rotation car bootstrap prévoit seulement les progress bar horizontales
+Utilisation de z-index pour la mettre en arrière plan
+*/
+.progress-bar-vertical{
+    transform: rotate(90deg);
+    width: 1000px;
+    position: absolute;
+    top: 70%;
+    z-index: -1;
+}
+
+/*
+Espaces qui sont affichés qu'a partir d'une certaine taille d'écran
+*/
+.void_spaces{
+    display: none;
+}
+
+/*
+Appartition des espaces quand la taille d'écran est < 770px
+*/
+@media screen and (max-width : 770px){
+    .void_spaces{
+        display: unset;
+    }
+}
+
+/* ajustement de la progress bar pour les différentes tailles d'écran*/
+
+/*
+quand l'affichage bootstrap, passe en mode petit écran et que la hauteur est petite
+*/
+@media screen and (max-width : 770px) and (max-height: 516px){
+    .progress-bar-vertical{
+        width: 1200px !important;
+    }
+}
+
+/*
+Quand la hauteur d'écran est moyenne 
+*/
+@media screen and (max-height: 650px){
+    
+    .progress-bar-vertical{
+        width: 1300px;
+    }
+    
+}
+
+/*
+Quand la hauteur d'écran est petite
+*/
+@media screen and (max-height: 516px){
+    
+    .progress-bar-vertical{
+        width: 1700px;
+    }
+    
+}
+
+/*
+Quand la hauteur d'écran est très petite
+*/
+@media screen and (max-height: 316px){
+    
+    .progress-bar-vertical{
+        width: 2100px;
+    }
+    
+}
+
+/* centrer la progress bar */
+#myBarContainer{
+    display: flex;
+    justify-content: center;
+
+}
+
+/* Faire les carrés de la timeline */
+.squareCv{
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+}
+
+/* Ajuster les liens avec le style de la page */
+.no_deco_link{
+    text-decoration: none;
+    color: white;
+}
+
+/* Classe qui va être utilisée pour tout les éléments blancs de la page */
+.white_txt{
+    color: white;
+}
+
+
+/* Container de la flip card */
+.flip-card {
+    background-color: transparent;
+    border: 1px solid #f1f1f1 !important;
+    height: 400px;
+    z-index: 1 !important;
+    overflow: hidden;
+}
+
+/* Positionnement de la flip card */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+  
+/* Effet de flip */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+/* Ajustement de la taille */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+
+/* Style the back side */
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+
+/*en fonction de la width quand les 3 cartes sont sur la même ligne et en fonction de la height quand il y en a un par ligne*/
+.image_carte{
+    height: auto;
+    width: 100%;
+}
+
+
+/* Atributs de la video */
+#video_comm{
+    width: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+/* Passage de la vidéo à 100% sur écran réduit et utilisation de la height comme référence pour les cartes */
+@media screen and (max-width: 770px){
+    .image_carte{
+        height: 100%;
+        width: auto;
+    }
+
+    #video_comm{
+        width: 100%;
+    }
+
+}
+
+/* Calsse qui permet de centrer les éléments */
+.centered{
+    text-align: center;
+}
